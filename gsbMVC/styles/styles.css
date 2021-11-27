@@ -1,0 +1,80 @@
+/* Styles des divisions principales de la page */
+body{
+	background-image: url(background.jpg);
+  margin-right: 3rem;
+  text-align: center;
+  background-repeat : no-repeat;
+  background-size : cover;
+  background-attachment: fixed;
+  font-family:"Trebuchet MS",Verdana,Geneva,Arial,Helvetica,sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+h1{
+  color : #F49E4C;
+  text-decoration: underline;
+}
+
+h2{
+  color : #F49E4C;
+  text-decoration: underline;
+}
+
+label{
+  color : #F49E4C;
+}
+
+.cache{
+  color : rgba(0, 0, 0, 0)
+}
+
+input[type=button],input[type=reset]{
+  background-color: #F49E4C;
+  font-size: 18px;
+  padding: 8px 32px;
+  border : 0mm;
+	border-radius:25px 0 25px 0;
+}
+
+input[type=button],input[type=submit]{
+  background-color: #F49E4C;
+  font-size: 18px;
+  padding: 8px 32px;
+  border : 0mm;
+	border-radius:0 25px 0 25px;
+}
+
+button.boutonchiant{
+  background-color: #F49E4C;
+  font-size: 14px;
+  border : 0mm;
+	border-radius:15px 15px 15px 15px;
+  margin: 1mm 0mm 1mm 0mm;
+}
+
+.button input:hover {
+  color: #F49E4C;
+  background-color: rgb(22, 20, 20);
+}
+
+.piedform input:hover {
+  color: #F49E4C;
+  background-color: rgb(22, 20, 20);
+}
+
+button.boutonchiant:hover{
+  color: #F49E4C;
+  background-color: rgb(22, 20, 20);
+}
+
+.comptable h3{
+  color: #F26D00;
+}
+
+.visiteur h3{
+  color: #F26D00;
+}
+
+.erreur li{
+  background-color : red;
+}
