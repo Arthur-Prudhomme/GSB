@@ -18,9 +18,8 @@
          <input type="reset" value="Annuler" name="annuler" style="width: 120px; height: 40px;"><br>
       </div>
       <div class='cache'>
-         <p onclick="window.location.href='./images/welldone.png'">.</p>
+         <a href="index.php?uc=connexion&action=clickInv"><img src="./images/carre.png">
       </div>
-      </p>
 </form>
 
 </div>

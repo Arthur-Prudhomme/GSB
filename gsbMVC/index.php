@@ -7,7 +7,7 @@ $pdo = PdoGsb::getPdoGsb();
 $estConnecte = estConnecte();
 if(!isset($_REQUEST['uc']) || !$estConnecte){
      $_REQUEST['uc'] = 'connexion';
-}	 
+}
 $uc = $_REQUEST['uc'];
 switch($uc){
 	case 'connexion':{
@@ -18,6 +18,9 @@ switch($uc){
 	}
 	case 'etatFrais' :{
 		include("controleurs/c_etatFrais.php");break; 
+	}
+	case 'comptable' :{
+		include("controleurs/c_comptable.php");break; 
 	}
 }
 include("vues/v_pied.php") ;

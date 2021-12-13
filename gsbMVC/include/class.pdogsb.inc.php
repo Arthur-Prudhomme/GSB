@@ -231,8 +231,9 @@ class PdoGsb{
 */
 	public function creeNouveauFraisHorsForfait($idVisiteur,$mois,$libelle,$date,$montant){
 		$dateFr = dateFrancaisVersAnglais($date);
-		$req = "insert into lignefraishorsforfait 
-		values('','$idVisiteur','$mois','$libelle','$dateFr','$montant')";
+		$req = "insert into lignefraishorsforfait
+		(idVisiteur,  mois,  libelle,  date, montant)
+		values('$idVisiteur','$mois','$libelle','$dateFr','$montant')";
 		PdoGsb::$monPdo->exec($req);
 	}
 /**
@@ -298,8 +299,22 @@ class PdoGsb{
 		PdoGsb::$monPdo->exec($req);
 	}
 
-	public function getNom(){
-		$req = "select prenom,nom,id from visiteur where role <> 'comptable'";
+	public function getNomV(){
+		$req = "select DISTINCT(id),prenom,nom FROM visiteur INNER JOIN fichefrais ON visiteur.id=fichefrais.idVisiteur where role <> 'Comptable'";
+		$res = PdoGsb::$monPdo->query($req);
+		$lesLignes = $res->fetchAll();
+		return $lesLignes;
+	}
+
+	public function getNomNV(){
+		$req = "select DISTINCT(id),prenom,nom FROM visiteur LEFT JOIN fichefrais ON visiteur.id=fichefrais.idVisiteur where role <> 'Comptable' AND fichefrais.idVisiteur IS null";
+		$res = PdoGsb::$monPdo->query($req);
+		$lesLignes = $res->fetchAll();
+		return $lesLignes;
+	}
+
+	public function getNPVisiteur($idVisiteur){
+		$req = "select prenom,nom from visiteur where id = '$idVisiteur'";
 		$res = PdoGsb::$monPdo->query($req);
 		$lesLignes = $res->fetchAll();
 		return $lesLignes;

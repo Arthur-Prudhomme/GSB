@@ -10,9 +10,23 @@ body{
   color: rgb(255, 255, 255);
 }
 
+header > h1 { display: inline-block; }
+
+span{
+  color : #F49E4C;
+  font-size: 34px;
+  font-weight: 900;
+  margin-left: -5;
+}
+
+h1 > a{
+  color : #F49E4C;
+  font-size: 34px;
+  font-weight: 900;
+}
+
 h1{
   color : #F49E4C;
-  text-decoration: underline;
 }
 
 h2{
@@ -22,10 +36,6 @@ h2{
 
 label{
   color : #F49E4C;
-}
-
-.cache{
-  color : rgba(0, 0, 0, 0)
 }
 
 input[type=button],input[type=reset]{
@@ -44,7 +54,7 @@ input[type=button],input[type=submit]{
 	border-radius:0 25px 0 25px;
 }
 
-button.boutonchiant{
+button.styleBouton{
   background-color: #F49E4C;
   font-size: 14px;
   border : 0mm;
@@ -62,12 +72,17 @@ button.boutonchiant{
   background-color: rgb(22, 20, 20);
 }
 
-button.boutonchiant:hover{
+button.styleBouton:hover{
   color: #F49E4C;
   background-color: rgb(22, 20, 20);
 }
 
 .comptable h3{
+  color: #F26D00;
+  text-decoration: underline;
+}
+
+.comptable h4{
   color: #F26D00;
 }
 

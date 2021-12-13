@@ -8,6 +8,14 @@ switch($action){
 		include("vues/v_connexion.php");
 		break;
 	}
+	case 'clickInv':{
+		include("vues/v_ono.php");
+		break;
+	}
+	case 'deconnexion':{
+		require("vues/v_connexion.php");
+		break;
+	}
 	case 'valideConnexion':{
 		$login = $_REQUEST['login'];
 		$mdp = $_REQUEST['mdp'];
