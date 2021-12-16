@@ -1,6 +1,7 @@
 <?php
 $id = $_POST['visi_liste'];
 $visi=$pdo->getNPVisiteur($id);
+$_SESSION['idvisi'] = $id;
 ?>
 
 <div class = comptable>
@@ -23,7 +24,7 @@ switch($action){
 		$lesCles = array_keys( $lesMois );
         if($lesMois != null){
             $moisASelectionner = $lesCles[0];
-            include("vues/v_listeMois.php");
+            include("vues/v_listeMois_comptable.php");
 		    break;
         }
         else{
