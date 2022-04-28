@@ -1,5 +1,6 @@
 ﻿ <div id="contenu">
-      <h2>Mes fiches de frais</h2>
+      <button onclick="window.location.href='index.php?uc=connexion&action=retourC'"  class="styleBouton" style="width: 200px; height: 20px;">Retour</button>
+      <h2>Fiches de frais</h2>
       <h3>Mois à sélectionner : </h3>
       <form action="index.php?uc=etatFrais_comptable&action=voirFrais" method="post">
       <div class="corpsForm">
@@ -33,8 +34,7 @@
       </div>
       <div class="piedForm">
       <p>
-        <input id="ok" type="submit" value="Valider" size="20" />
-        <input id="annuler" type="reset" value="Effacer" size="20" />
+        <input id="validation" type="submit" value="Valider" size="20" />
       </p> 
       </div>
         

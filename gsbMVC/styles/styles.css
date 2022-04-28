@@ -34,6 +34,11 @@ h2{
   text-decoration: underline;
 }
 
+h4{
+  color : #f46e4c;
+  text-decoration: underline;
+}
+
 label{
   color : #F49E4C;
 }
@@ -52,6 +57,14 @@ input[type=button],input[type=submit]{
   padding: 8px 32px;
   border : 0mm;
 	border-radius:0 25px 0 25px;
+}
+
+input[type=button],input[id=validation]{
+  background-color: #F49E4C;
+  font-size: 18px;
+  padding: 8px 32px;
+  border : 0mm;
+	border-radius:25px 25px 25px 25px;
 }
 
 button.styleBouton{

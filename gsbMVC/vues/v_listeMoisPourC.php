@@ -1,5 +1,5 @@
 ﻿ <div id="contenu">
-      <h2>Mes fiches de frais</h2>
+      <h2>Fiches de frais</h2>
       <h3>Mois à sélectionner : </h3>
       <form action="index.php?uc=comptable&action=voirEtatFrais" method="POST">
       <div class="corpsForm">
